@@ -1,0 +1,152 @@
+body {
+  margin: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.closed .vertical {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(-90deg);
+}
+.closed .horizontal {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(-90deg);
+  opacity: 1;
+}
+
+.opened {
+  opacity: 1;
+}
+.opened .vertical {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(90deg);
+}
+.opened .horizontal {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(90deg);
+  opacity: 0;
+}
+
+.circle-plus {
+  height: 5em;
+  width: 100%;
+  background-color: red;
+  font-size: 1em;
+  opacity: 0.7;
+  margin: auto;
+  padding: 2% 0%;
+  display: flex;
+  align-items: center;
+}
+
+.circle-plus .circle {
+  position: relative;
+  width: 2.55em;
+  cursor: pointer;
+  height: 2.5em;
+  border-radius: 100%;
+  border: solid 1px white;
+  margin: auto;
+}
+
+.circle-plus .circle .horizontal {
+  position: absolute;
+  background-color: white;
+  width: 31px;
+  height: 1px;
+  left: 50%;
+  margin-left: -15px;
+  top: 50%;
+  margin-top: -0.5px;
+}
+
+.circle-plus .circle .vertical {
+  position: absolute;
+  background-color: white;
+  width: 1px;
+  height: 31px;
+  left: 50%;
+  margin-left: -0.5px;
+  top: 50%;
+  margin-top: -15px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: blue;
+  opacity: 0.7;
+  margin: auto;
+  display: none;
+  text-align: center;
+}
+.footer ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px 0px;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  justify-content: space-around;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+}
+.footer a:hover {
+  color: red;
+}
+
+.hop {
+  display: flex;
+  transition: 0.5s;
+}
+
+h2 {
+  text-align: center;
+}
+
+h2 {
+  background-color: green;
+  opacity: 0.7;
+  margin: 0px;
+  padding: 2% 0%;
+  color: white;
+}
+
+p {
+  padding: 0% 20%;
+  font-size: 30px;
+  text-align: justify;
+}
+
+#up {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  cursor: pointer;
+  color: red;
+  background-color: black;
+  padding: 20px 33px;
+  border-radius: 61px 61px;
+  text-decoration: none;
+  text-align: center;
+  opacity: 0.7;
+  transition: 1s;
+}
+#up:hover {
+  opacity: 1;
+  transition: 1s;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 100px 200px 100px;
+  border-color: transparent transparent #007bff transparent;
+  border-radius: 0px;
+}
+
+/*# sourceMappingURL=main.css.map */
